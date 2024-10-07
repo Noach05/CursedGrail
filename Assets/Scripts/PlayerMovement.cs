@@ -5,13 +5,13 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 14f;
+    private float jumpingPower = 18f;
     private bool isFacingRight = true;
 
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 10f;
-    private float dashingTime = 0.2f;
+    private float dashingPower = 33f;
+    private float dashingTime = 0.18f;
     private float dashingCooldown = 1f;
 
     private bool isWallSliding;
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(4f, 14f);
+    private Vector2 wallJumpingPower = new Vector2(6f, 22f);
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
