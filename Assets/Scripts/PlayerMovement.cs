@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(2f, 22f);
+    private Vector2 wallJumpingPower = new Vector2(2f, 18f);
     
 
     [SerializeField] private Rigidbody2D rb;
@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
             canDash = true;
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
+        }
+        if (IsWalled()) {
+            canDash = true;
         }
         if (isDashing)
         {
@@ -102,7 +105,11 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsWalled()
     {
-        return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+        bool canWallJump;
+        if (Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer)) canWallJump = true;
+        else if(Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer)) canWallJump = true;
+        else canWallJump = false;
+        return canWallJump;
     }
 
     private void WallSlide()
