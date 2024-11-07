@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialScene.unity
     guid: 65dca9fe4c2cd214fb0568dc48435787
   - enabled: 1
-    path: Assets/Dungeon 1.unity
+    path: Assets/Prefabs/Dungeon 1.unity
     guid: 43e38ed7ad7476041acd47bc006bd287
   m_configObjects: {}
