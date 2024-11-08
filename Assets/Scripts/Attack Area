@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerAttack : MonoBehaviour
+{
+    private GameObject attackArea = default;
+    private bool attacking = false;
+    private float timeToAttack = 0.25f;  // Time to keep the attack area active
+    private float timer = 0f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Find and reference the attack area (assumed to be the first child of the player)
+        attackArea = transform.GetChild(0).gameObject;
+        attackArea.SetActive(false);  // Initially hide the attack area
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Check if the player presses the attack key (K) and isn't already attacking
+        if (Input.GetKeyDown(KeyCode.K) && !attacking)
+        {
+            Debug.Log("Attack key pressed");
+            Attack();  // Call the Attack function
+        }
+
+        // Handle the attack logic if currently attacking
+        if (attacking)
+        {
+            // Increment the timer based on time passed
+            timer += Time.deltaTime;
+
+            // Check if the attack duration has passed
+            if (timer >= timeToAttack)
+            {
+                timer = 0;  // Reset the timer
+                attacking = false;  // Stop attacking
+                attackArea.SetActive(false);  // Deactivate the attack area
+            }
+        }
+    }
+
+    // Function that activates the attack area
+    private void Attack()
+    {
+        attacking = true;  // Set attacking state to true
+        attackArea.SetActive(true);  // Activate the attack area (Collider or visual effect)
+    }
+}
