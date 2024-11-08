@@ -1,3 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Enemy movement script : MonoBehaviour
+{
 private Vector3 _currentTarget;
 private Animator _anim;
 private SpriteRenderer _mossGiantSprite;
@@ -35,4 +41,5 @@ private void Movement()
       _anim.SetTrigger("Idle");
    }
    transform.position = Vector3.MoveTowards(transform.position, _currentTarget, speed * Time.deltaTime);
+}
 }
