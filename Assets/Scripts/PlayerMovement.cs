@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -74,6 +75,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            var curScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(curScene.name);
         }
 
         WallSlide();

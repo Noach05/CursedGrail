@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 7437642840291994015}
   - component: {fileID: 2888763013765753459}
   - component: {fileID: 190022080779620809}
+  - component: {fileID: 4339156395342163746}
   m_Layer: 3
   m_Name: FPSmallIsland1Layer
   m_TagString: Untagged
@@ -237,7 +238,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4753679353744515368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -329,36 +330,79 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 7437642840291994015}
-    m_ColliderPaths:
-    - - X: 30000000
-        Y: 31250000
-      - X: 30000000
-        Y: 39062500
-      - X: 28750000
-        Y: 40000000
-      - X: 1250000
-        Y: 40000000
-      - X: 0
-        Y: 39062500
-      - X: 0
-        Y: 30937500
-      - X: 937500
-        Y: 30000000
-      - X: 29062500
-        Y: 30000000
+  m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 2.906237, y: 3}
-      - {x: 3, y: 3.1250083}
-      - {x: 2.9999895, y: 3.906258}
-      - {x: 2.8749917, y: 4}
-      - {x: 0.1249931, y: 3.9999948}
-      - {x: 0, y: 3.906237}
-      - {x: 0.0000076, y: 3.0937424}
-      - {x: 0.0937608, y: 3}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 4753679353744515368}
+--- !u!60 &4339156395342163746
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753679353744515368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.5, y: 4}
+      - {x: 0.12453306, y: 4.0012984}
+      - {x: 0.06311464, y: 3.9678879}
+      - {x: -0.00032520294, y: 3.906455}
+      - {x: -0.0012578964, y: 3.7295141}
+      - {x: -0.000074863434, y: 3.3748064}
+      - {x: -0.0010080338, y: 3.0930243}
+      - {x: 0.061866283, y: 3.031026}
+      - {x: 0.24984372, y: 2.999862}
+      - {x: 0.90587187, y: 2.9990988}
+      - {x: 1.5635247, y: 2.9984865}
+      - {x: 2.2494788, y: 2.998681}
+      - {x: 2.7797117, y: 2.998743}
+      - {x: 2.9367185, y: 3.0309572}
+      - {x: 2.9685547, y: 3.061502}
+      - {x: 3.0024195, y: 3.1246367}
+      - {x: 3.0010533, y: 3.3744211}
+      - {x: 2.9690933, y: 3.437029}
+      - {x: 2.9691525, y: 3.4691648}
+      - {x: 2.9693003, y: 3.6252174}
+      - {x: 3.0012197, y: 3.6865673}
+      - {x: 3.0009027, y: 3.9061127}
+      - {x: 2.937942, y: 3.9677858}
+      - {x: 2.8745098, y: 4.0015106}
+  m_UseDelaunayMesh: 0
