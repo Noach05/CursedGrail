@@ -52,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isDashing)
         {
-            animator.SetBool("IsDashingOnGround", false);
             animator.SetBool("IsDashing", false);
         }
 
@@ -62,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            // animator.SetBool("IsJumping", true);
             animator.Play("Player_Jump");
         }
 
