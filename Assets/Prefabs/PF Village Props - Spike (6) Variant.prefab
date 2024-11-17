@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Spike (6) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
+      propertyPath: m_TagString
+      value: Hazards
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69,7 +73,7 @@ PrefabInstance:
       addedObject: {fileID: 2264715184003497883}
     - targetCorrespondingSourceObject: {fileID: 1049023302621363167, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3895779867030241751}
+      addedObject: {fileID: 281802694201176538}
   m_SourcePrefab: {fileID: 100100000, guid: c4728654af6c1b84fb5102e3f29ffb8f, type: 3}
 --- !u!1 &537067331631742298 stripped
 GameObject:
@@ -120,20 +124,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.39026442, y: 0.34374917}
-      - {x: -0.38941082, y: 0.34375104}
-      - {x: -0.42315218, y: 0.3125979}
-      - {x: -0.45385563, y: 0.2507814}
-      - {x: -0.4850137, y: 0.15697847}
-      - {x: -0.515625, y: 0.12443827}
-      - {x: -0.515625, y: 0}
-      - {x: 0.515625, y: 0}
-      - {x: 0.515625, y: 0.12637945}
-      - {x: 0.48385602, y: 0.15432292}
-      - {x: 0.4541596, y: 0.25048542}
-      - {x: 0.4238343, y: 0.3148943}
+    - - {x: 0.38924646, y: 0.3334435}
+      - {x: -0.38184887, y: 0.33017746}
+      - {x: -0.40739813, y: 0.30221745}
+      - {x: -0.4229777, y: 0.24359405}
+      - {x: -0.44873923, y: 0.15570827}
+      - {x: -0.4648485, y: 0.146598}
+      - {x: -0.48077646, y: 0.12581658}
+      - {x: -0.5030217, y: 0.12523921}
+      - {x: -0.5030218, y: 0.0007902484}
+      - {x: 0.4988445, y: -0.0006407262}
+      - {x: 0.4983366, y: 0.12123199}
+      - {x: 0.4762287, y: 0.14143285}
+      - {x: 0.4409388, y: 0.23438084}
+      - {x: 0.41163144, y: 0.29814896}
   m_UseDelaunayMesh: 0
---- !u!114 &3895779867030241751
+--- !u!114 &281802694201176538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +148,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 537067331631742298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2882dfaad0c779c41a68e68d73b4f11b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0133d88754145d640ac8714a9952d068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
